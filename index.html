@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aislamiento Térmico por 1€ - Aislamiento de Áticos</title>
+    <meta name="description" content="Aislamiento térmico de áticos por solo 1€ con ayudas públicas. Reduce tu factura energética y mejora la eficiencia de tu hogar.">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/form-validation.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo" width="50" height="50">
+                <span>Ecoaisla</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#beneficios"><i class="fas fa-star"></i> Beneficios</a></li>
+                <li><a href="#por-que-1euro"><i class="fas fa-euro-sign"></i> ¿Por qué 1€?</a></li>
+                <li><a href="#como-funciona"><i class="fas fa-cogs"></i> Cómo funciona</a></li>
+                <li><a href="#faq"><i class="fas fa-question-circle"></i> Preguntas</a></li>
+                <li class="nav-cta"><a href="#contacto" class="cta-button primary"><i class="fas fa-paper-plane"></i> Contacto</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Modern Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>¡Ahorra hasta un 30% en tu factura energética!</span>
+                    </div>
+                    <h1>Financiación 100% subvencionada para el aislamiento de tu ático</h1>
+                    <p class="hero-subtitle">Aprovecha las ayudas europeas Next Generation y mejora la eficiencia energética de tu hogar sin coste adicional.</p>
+                    <div class="hero-cta">
+                        <a href="#elegibilidad" class="btn btn-primary btn-lg">Comprobar elegibilidad</a>
+                        <a href="#beneficios" class="btn btn-outline btn-lg">Ver beneficios</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-form-container">
+                <div class="form-header">
+                    <h3>¡Empieza a ahorrar!</h3>
+                    <p>Completa el formulario y te llamaremos sin compromiso</p>
+                </div>
+                <form id="hero-contact-form" class="contact-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="hero-name" name="name" placeholder="Nombre completo" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="hero-address" name="address" placeholder="Dirección completa" required>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="tel" id="hero-phone" name="phone" placeholder="Teléfono" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Tipo de vivienda:</label>
+                        <div class="toggle-buttons">
+                            <input type="radio" id="casa" name="tipo-vivienda" value="casa" checked>
+                            <label for="casa" class="toggle-btn">Casa</label>
+                            <input type="radio" id="apartamento" name="tipo-vivienda" value="apartamento">
+                            <label for="apartamento" class="toggle-btn">Apartamento</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar información</button>
+                    <p class="form-note">¿Tienes dudas? Llama al <a href="tel:+34900123456">900 123 456</a></p>
+                    <div class="form-footer">
+                        <p class="privacy-note">
+                            <i class="fas fa-lock"></i> Protegemos tus datos. <a href="#" class="privacy-link">Política de privacidad</a>
+                        </p>
+                        <div class="trust-badges">
+                            <span><i class="fas fa-shield-alt"></i> Seguro</span>
+                            <span><i class="fas fa-lock"></i> Privado</span>
+                            <span><i class="fas fa-check-circle"></i> Sin compromiso</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Image Section -->
+    <div class="process-image-container" data-aos="fade-up">
+        <div class="container">
+            <img src="images/ii.png" alt="Proceso de aislamiento térmico" class="process-image">
+            <img src="imgaesinicio/CAE.png" alt="" class="process-image">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sección de Beneficios -->
+        <section id="por-que-aislar" class="benefits-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Beneficios</span>
+                    <h2 class="section-title">¿Por qué aislar tu ático?</h2>
+                    <div class="divider"></div>
+                    <p class="section-description">El aislamiento de ático es clave para reducir el consumo de calefacción y aire acondicionado. Un hogar mal aislado pierde hasta un <strong>30% del calor en invierno</strong>, lo que se traduce en facturas de energía más altas.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <!-- Tarjeta de Beneficio 1 -->
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <img src="images/png-transparent-green-light-bulb-energy-conservation-saving-efficient-energy-use-home-energy-saver-save-electricity-background-compressor-brand-invoice-thumbnail-removebg-preview.png" alt="Ahorro energético" loading="lazy">
+                        </div>
+                        <h3>Ahorro Energético</h3>
+                        <p>Reduce hasta un 30% en tus facturas de energía con nuestro aislamiento de alta eficiencia.</p>
+                        <div class="benefit-stats">
+                            <div class="stat">
+                                <span class="stat-number">30%</span>
+                                <span class="stat-label">Ahorro</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1-3</span>
+                                <span class="stat-label">Años ROI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de Beneficio Destacada -->
+                    <div class="benefit-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-badge">¡Popular!</div>
+                        <div class="card-icon">
+                            <img src="images/temperatura-aire-acondicionado-euroair-removebg-preview.png" alt="Confort térmico" loading="lazy">
+                        </div>
+                        <h3>Confort Todo el Año</h3>
+                        <p>Mantén una temperatura estable y agradable en tu hogar en cualquier estación.</p>
+                        <ul class="benefit-list">
+                            <li><i class="fas fa-check"></i> Calor en invierno</li>
+                            <li><i class="fas fa-check"></i> Frescor en verano</li>
+                            <li><i class="fas fa-check"></i> Sin corrientes de aire</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tarjeta de Beneficio 3 -->
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <img src="images/aislamiento-acústico-para-paredes-removebg-preview.png" alt="Aislamiento acústico" loading="lazy">
+                        </div>
+                        <h3>Aislamiento Acústico</h3>
+                        <p>Protege tu hogar del ruido exterior para un ambiente más tranquilo y relajante.</p>
+                        <div class="benefit-meter">
+                            <div class="meter-label">Reducción de ruido</div>
+                            <div class="meter">
+                                <div class="meter-fill" style="width: 85%;"></div>
+                            </div>
+                            <div class="meter-value">85% menos ruido</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-cta" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cta-content">
+                        <h3>¿Listo para ahorrar en tus facturas de energía?</h3>
+                        <p>Nuestros expertos están listos para asesorarte sin compromiso.</p>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">
+                        <span class="btn-text">Solicitar presupuesto gratuito</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                </div>
+
+                <div id="por-que-1euro" class="funding-info" data-aos="fade-up">
+                    <div class="info-card">
+                        <h3 class="info-title">¿Cómo es posible que el aislamiento de áticos esté financiado por solo 1€ en España?</h3>
+                        <div class="info-content">
+                            <p>El aislamiento de buhardillas por 1 euro se basa en una obligación legal impuesta a los proveedores de energía en el marco de los Certificados de Ahorro Energético (CAE), regulados por el Real Decreto 36/2023 e integrados en el Sistema Nacional de Obligaciones de Eficiencia Energética (SNOEE).</p>
+                            <p>Desde la adopción del Pacto Verde Europeo (2019) y la revisión de la Directiva 2012/27/UE de Eficiencia Energética, los proveedores de energía, distribuidores de productos petrolíferos y gas están obligados a contribuir a la reducción del consumo energético en los hogares. Para cumplir con esta obligación, financian trabajos de aislamiento, priorizando a las familias más vulnerables.</p>
+                        </div>
+                        <div class="info-footer">
+                            <a href="#contacto" class="btn btn-primary btn-pulse">
+                                <span class="btn-text">Solicitar Estudio Gratis</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <a href="#preguntas-frecuentes" class="btn btn-outline">
+                                <span class="btn-text">Más información</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="como-funciona" class="steps">
+            <div class="container">
+                <h2>¿Cómo funciona?</h2>
+                <p class="section-subtitle">El proceso es rápido, sencillo y sin compromiso</p>
+                
+                <div class="steps-container">
+                    <div class="step fade-in">
+                        <div class="step-image">
+                            <img src="https://img.icons8.com/3d-fluency/100/000000/form.png" alt="Formulario" loading="lazy">
+                            <div class="step-number">1</div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Solicita una evaluación gratuita</h3>
+                            <p>Rellena nuestro formulario en menos de 30 segundos para comenzar el proceso.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-image">
+                            <img src="images/11053193-removebg-preview.png" alt="Revisión" loading="lazy">
+                            <div class="step-number">2</div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Revisión de elegibilidad</h3>
+                            <p>Nuestro equipo verificará tu elegibilidad para el programa de ayudas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-image">
+                            <img src="https://img.icons8.com/3d-fluency/100/000000/visit.png" alt="Visita técnica" loading="lazy">
+                            <div class="step-number">3</div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Visita técnica sin costo</h3>
+                            <p>Un experto evaluará tu propiedad para determinar la mejor solución de aislamiento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step fade-in">
+                        <div class="step-image">
+                            <img src="https://img.icons8.com/3d-fluency/100/000000/worker.png" alt="Instalación" loading="lazy">
+                            <div class="step-number">4</div>
+                        </div>
+                        <div class="step-content">
+                            <h3>Instalación profesional</h3>
+                            <p>Nuestro equipo certificado realizará la instalación con materiales de primera calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#elegibilidad" class="cta-button">
+                        <span class="btn-text">Solicitar mi evaluación gratuita ahora</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Encuentra respuestas a las dudas más comunes sobre nuestro servicio</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item fade-in">
+                        <h3>¿Cómo sé si mi vivienda es elegible? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Para ser elegible, tu vivienda debe cumplir con estos requisitos:</p>
+                            <ul>
+                                <li>Ser una casa independiente (no aplicable a apartamentos)</li>
+                                <li>Tener más de 2 años</li>
+                                <li>Tener un ático sin aislamiento o mal aislado</li>
+                                <li>Estar situada en España</li>
+                            </ul>
+                            <p>Puedes comprobar tu elegibilidad en menos de 30 segundos rellenando nuestro formulario.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3>¿El aislamiento de buhardilla realmente es gratuito? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Sí, el aislamiento de ático está 100% financiado por los contaminadores a través del programa de Certificados de Ahorro Energético (CAE). No tendrás que pagar nada ni adelantar dinero.</p>
+                            <div class="faq-note">
+                                <i class="fas fa-info-circle"></i>
+                                <span>El coste está cubierto por las empresas obligadas a financiar medidas de eficiencia energética.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3>¿Tengo que realizar algún trámite administrativo? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>No, nosotros nos encargamos de todo el proceso:</p>
+                            <ul>
+                                <li>Gestión de documentación</li>
+                                <li>Tramitación de ayudas</li>
+                                <li>Coordinación con los instaladores</li>
+                                <li>Seguimiento del proyecto</li>
+                            </ul>
+                            <p>Tan solo necesitamos tu autorización para actuar en tu nombre.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3>¿Qué materiales se utilizan para el aislamiento? <i class="fas fa-chevron-down"></i></h3>
+                        <div class="faq-answer">
+                            <p>Trabajamos con materiales de alta calidad y certificados para garantizar un aislamiento térmico óptimo y duradero. Los materiales utilizados pueden incluir:</p>
+                            <div class="materials-grid">
+                                <div class="material-item">
+                                    <img src="https://img.icons8.com/3d-fluency/100/000000/rock-wool.png" alt="Lana de roca" loading="lazy">
+                                    <span>Lana de roca</span>
+                                </div>
+                                <div class="material-item">
+                                    <img src="https://img.icons8.com/3d-fluency/100/000000/cotton.png" alt="Fibra de celulosa" loading="lazy">
+                                    <span>Fibra de celulosa</span>
+                                </div>
+                                <div class="material-item">
+                                    <img src="https://img.icons8.com/3d-fluency/100/000000/foam.png" alt="Espuma de poliuretano" loading="lazy">
+                                    <span>Espuma de poliuretano</span>
+                                </div>
+                            </div>
+                            <p>Nuestros expertos evaluarán tu ático y te recomendarán la mejor solución adaptada a tus necesidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-cta">
+                        <p>¿No encuentras respuesta a tu pregunta?</p>
+                        <a href="#contacto" class="cta-button">Contáctanos directamente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="elegibilidad" class="contact-form">
+            <h2>Comprueba tu elegibilidad</h2>
+            <form id="eligibility-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Código postal*</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Acepto la política de privacidad*</label>
+                </div>
+                <button type="submit" class="cta-button">Comprobar mi elegibilidad</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AISLA-ECO</h3>
+                <p>Especialistas en aislamiento térmico con ayudas públicas.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#por-que-aislar">¿Por qué aislar tu ático?</a></li>
+                    <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> 900 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@aisla-eco.es</p>
+                <p><i class="fas fa-map-marker-alt"></i> C/ Ejemplo, 123, 28001 Madrid</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AISLA-ECO. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Form Validation Script -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Form Validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const forms = document.querySelectorAll('form');
+            
+            forms.forEach(form => {
+                // Add input event listeners for real-time validation
+                const inputs = form.querySelectorAll('input, textarea, select');
+                inputs.forEach(input => {
+                    // Add input event for real-time validation
+                    input.addEventListener('input', function() {
+                        validateField(this);
+                    });
+                    
+                    // Add blur event for when user leaves the field
+                    input.addEventListener('blur', function() {
+                        validateField(this);
+                    });
+                });
+                
+                // Form submission
+                form.addEventListener('submit', function(e) {
+                    let isValid = true;
+                    const formInputs = this.querySelectorAll('input, textarea, select');
+                    
+                    // Validate all fields on submit
+                    formInputs.forEach(input => {
+                        if (!validateField(input)) {
+                            isValid = false;
+                        }
+                    });
+                    
+                    if (!isValid) {
+                        e.preventDefault();
+                        // Scroll to first error
+                        const firstError = this.querySelector('.error');
+                        if (firstError) {
+                            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+                });
+            });
+            
+            // Field validation function
+            function validateField(field) {
+                const formGroup = field.closest('.form-group');
+                if (!formGroup) return true;
+                
+                // Reset previous states
+                formGroup.classList.remove('error', 'success');
+                
+                // Remove existing error/success messages
+                const existingError = formGroup.querySelector('.error-message');
+                const existingSuccess = formGroup.querySelector('.success-message');
+                if (existingError) existingError.remove();
+                if (existingSuccess) existingSuccess.remove();
+                
+                // Skip validation for non-required empty fields
+                if (!field.required && !field.value.trim()) {
+                    return true;
+                }
+                
+                // Check for required fields
+                if (field.required && !field.value.trim()) {
+                    showError(field, 'Este campo es obligatorio');
+                    return false;
+                }
+                
+                // Email validation
+                if (field.type === 'email' && field.value.trim()) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(field.value.trim())) {
+                        showError(field, 'Por favor, introduce un correo electrónico válido');
+                        return false;
+                    }
+                }
+                
+                // Phone number validation (simple)
+                if (field.type === 'tel' && field.value.trim()) {
+                    const phoneRegex = /^[0-9+\-\s]{9,}$/;
+                    if (!phoneRegex.test(field.value.trim())) {
+                        showError(field, 'Por favor, introduce un número de teléfono válido');
+                        return false;
+                    }
+                }
+                
+                // If all validations pass
+                showSuccess(field);
+                return true;
+            }
+            
+            function showError(field, message) {
+                const formGroup = field.closest('.form-group');
+                if (!formGroup) return;
+                
+                formGroup.classList.add('error');
+                
+                // Create error message element if it doesn't exist
+                if (!formGroup.querySelector('.error-message')) {
+                    const errorElement = document.createElement('div');
+                    errorElement.className = 'error-message';
+                    errorElement.textContent = message;
+                    formGroup.appendChild(errorElement);
+                }
+            }
+            
+            function showSuccess(field) {
+                const formGroup = field.closest('.form-group');
+                if (!formGroup) return;
+                
+                formGroup.classList.add('success');
+                
+                // Create success message element if it doesn't exist
+                if (!formGroup.querySelector('.success-message')) {
+                    const successElement = document.createElement('div');
+                    successElement.className = 'success-message';
+                    successElement.textContent = '¡Perfecto!';
+                    formGroup.appendChild(successElement);
+                }
+            }
+        });
+    </script>
+    <script src="js/smooth-scroll.js"></script>
+</body>
+</html>
