@@ -1,0 +1,233 @@
+/* ==========================================================================
+   #MAIN STYLESHEET - ECOAISLA
+   
+   Table of Contents:
+   -----------------
+   1.  Core Setup
+   2.  Design Tokens & Variables
+   3.  Base & Reset
+   4.  Utility Classes
+   5.  Animations & Transitions
+   6.  Components
+   7.  Layout
+   8.  Pages
+   9.  Vendor Overrides
+   10. Print Styles
+   ========================================================================== */
+
+/* 1. Core Setup
+   ========================================================================== */
+/**
+ * Optimize font rendering and text rendering for better legibility
+ */
+*,
+*::before,
+*::after {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * 1.1 Import Google Fonts with display=swap for better performance
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/**
+ * 1.2 Import Font Awesome with preconnect for better performance
+ */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* 2. Design Tokens & Variables
+   ========================================================================== */
+@import 'variables.css';
+@import 'components/_variables.css';
+
+/* 3. Base & Reset
+   ========================================================================== */
+@import 'base.css';
+@import 'normalize.css';
+
+/* 4. Utility Classes
+   ========================================================================== */
+@import 'utilities.css';
+@import 'components/_utilities.css';
+
+/* 5. Animations & Transitions
+   ========================================================================== */
+@import 'animations.css';
+@import 'components/_animations.css';
+
+/* 6. Components
+   ========================================================================== */
+@import 'components.css';
+@import 'components/_accessibility.css';
+@import 'components/_back-to-top.css';
+@import 'components/_buttons.css';
+@import 'components/_cards.css';
+@import 'components/_forms.css';
+@import 'components/_navigation.css';
+@import 'components/_toast.css';
+@import 'components/_form-validation.css';
+@import 'components/_pwa.css';
+@import 'components/_modals.css';
+@import 'components/_tabs.css';
+@import 'components/_accordions.css';
+
+/* 7. Layout
+   ========================================================================== */
+@import 'layout/_header.css';
+@import 'layout/_footer.css';
+@import 'layout/_grid.css';
+@import 'layout/_containers.css';
+
+/* 8. Pages
+   ========================================================================== */
+@import 'pages/_home.css';
+@import 'pages/_eligibility.css';
+@import 'pages/_benefits.css';
+@import 'pages/_how-it-works.css';
+
+/* 9. Vendor Overrides
+   ========================================================================== */
+@import 'vendor/_aos.css';
+@import 'vendor/_slick.css';
+
+/* 10. Print Styles
+   ========================================================================== */
+@import 'print.css';
+
+/* 11. Dark Mode (must be last to override other styles)
+   ========================================================================== */
+@import 'dark-mode.css';
+
+/* 12. Critical CSS (inlined in head)
+   ========================================================================== */
+/* Note: This is automatically generated during build process */
+/* @import 'critical.css'; */
+
+/**
+ * 9. Import enhanced section styles
+ */
+@import 'header-enhanced.css';
+@import 'hero-enhanced.css';
+@import 'how-it-works-enhanced.css';
+@import 'benefits-enhanced.css';
+@import 'eligibility-enhanced.css';
+@import 'footer-enhanced.css';
+@import 'compact-form-enhanced.css';
+
+/**
+ * 10. Import print styles (optional)
+ */
+/* @import 'print.css' print; */
+
+/**
+ * 11. Dark mode overrides (if not using CSS variables)
+ */
+/* @import 'dark-mode.css' (prefers-color-scheme: dark); */
+
+/**
+ * 12. Print styles (alternative approach)
+ */
+@media print {
+  /* Print styles here */
+}
+
+/**
+ * 13. Debug styles (development only)
+ */
+/* @import 'debug.css'; */
+
+/**
+ * 14. Custom scrollbar (optional)
+ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/**
+ * 15. Selection styles
+ */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+  text-shadow: none;
+}
+
+/**
+ * 16. Focus styles for better accessibility
+ */
+:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/**
+ * 17. Print styles
+ */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+}
